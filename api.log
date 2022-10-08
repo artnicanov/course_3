@@ -1,0 +1,16 @@
+2022-10-08 23:56:39,372 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-08 23:56:39,373 [INFO] [33mPress CTRL+C to quit[0m
+2022-10-08 23:57:00,437 [INFO] Запрос /api/posts/2
+2022-10-08 23:57:00,442 [INFO] 127.0.0.1 - - [08/Oct/2022 23:57:00] "GET /api/posts/2 HTTP/1.1" 200 -
+2022-10-08 23:57:34,762 [INFO] 127.0.0.1 - - [08/Oct/2022 23:57:34] "GET /api/posts/ HTTP/1.1" 200 -
+2022-10-08 23:57:38,662 [INFO] Запрос /api/posts
+2022-10-08 23:57:38,665 [INFO] 127.0.0.1 - - [08/Oct/2022 23:57:38] "GET /api/posts HTTP/1.1" 200 -
+[INFO] //// [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+[INFO] //// [33mPress CTRL+C to quit[0m
+[INFO] //// Запрос /api/posts
+[INFO] //// 127.0.0.1 - - [09/Oct/2022 00:08:28] "GET /api/posts HTTP/1.1" 200 -
+2022-10-09 01:34:46,375 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-09 01:34:46,376 [INFO] [33mPress CTRL+C to quit[0m

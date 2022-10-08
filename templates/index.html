@@ -26,8 +26,8 @@
   <main class="container">
 
     <div class="search">
-      <form action="/search/" class="search__form">
-        <input type="search" class="search__input">
+      <form action="/search" class="search__form">
+        <input type="search" class="search__input" name="s">
       </form>
     </div>
 
@@ -35,7 +35,7 @@
       <div class="items__item item">
         {% for post in posts %} <!-- цикл перебирает посты полученные из переменной posts в главной вьюшке -->
         <div class="item__top">
-          <a href="/users/{{ post.poster_name }}" class="item__head">
+          <a href="/users/{{ post.poster_name }}" class="item__head"> <!-- в этой ссылке ведем на конкретного пользователя -->
             <div class="item__ava-wrap">
               <img src= {{ post.poster_avatar }} alt="" class="item__ava" width="47"> <!-- аватарка пользователя -->
             </div>
