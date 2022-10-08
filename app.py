@@ -35,8 +35,7 @@ def post_page(postid):
 @app.route('/search/')
 def search_page():
 	search_query = request.args.get('s')  # получаем значение из адресной строки через args
-	posts_data = utils.search_for_posts(
-		search_query)  # передаем функции, которая ищет слова, значение полученное строкой выше
+	posts_data = utils.search_for_posts(search_query)  # передаем функции, которая ищет слова, значение полученное строкой выше
 	posts_count = len(posts_data)
 	return render_template('search.html', posts=posts_data, posts_count=posts_count)
 
@@ -67,14 +66,14 @@ def server_mistake(error):
 @app.route('/api/posts')
 def first_api_endpoint():
 	posts_data = utils.get_posts_all()  # в эту переменную передаем все посты
-	logging.info("Запрос /api/posts")  # сообщени для логгера
+	logging.info("Запрос /api/posts")  # сообщение для логгера
 	return jsonify(posts_data)
 
 # вьюшка для тестов API, возвращает один пост в виде JSON-словаря
 @app.route('/api/posts/<int:postid>')
 def second_api_endpoint(postid):
 	post_data = utils.get_post_by_pk(postid)  # в эту переменную передаем конкретный пост по его идентификатору
-	logging.info(f"Запрос /api/posts/{postid}")  # сообщени для логгера
+	logging.info(f"Запрос /api/posts/{postid}")  # сообщение для логгера
 	return jsonify(post_data)
 
 
