@@ -26,7 +26,7 @@
   <main class="container">
 
     <div class="search">
-      <form action="/search" class="search__form">
+      <form action="/search/" class="search__form">
         <input type="search" class="search__input">
       </form>
     </div>
@@ -35,21 +35,21 @@
       <div class="items__item item">
         {% for post in posts %} <!-- цикл перебирает посты полученные из переменной posts в главной вьюшке -->
         <div class="item__top">
-          <a href="/user-feed.html" class="item__head">
+          <a href="/users/{{ post.poster_name }}" class="item__head">
             <div class="item__ava-wrap">
-              <img src= {{ post.poster_avatar }} alt="" class="item__ava" width="47"> <!-- здесь аватарка пользователя -->
+              <img src= {{ post.poster_avatar }} alt="" class="item__ava" width="47"> <!-- аватарка пользователя -->
             </div>
-            <span class="item__username">{{ post.poster_name }}</span> <!-- здесь имя пользователя -->
+            <span class="item__username">{{ post.poster_name }}</span> <!-- имя пользователя -->
           </a>
         </div>
         <a href="/posts/{{ post.pk }}" class="item__post-link"> <!-- в этой ссылке ведем на конкретный пост -->
           <img src= {{ post.pic }} alt="" width="348" class="item__post-img"> <!-- здесь картинка к посту -->
         </a>
-        <p class="item__descr">{{ post.content[:50] }}...</p> <!-- здесь короткий пост до 50 символов -->
+        <p class="item__descr">{{ post.content[:50] }}...</p> <!-- короткий пост до 50 символов -->
         <div class="item__post-info">
           <div class="item__counter">
             <img src="static/img/eye.png" alt="" class="item__counter-icon" width="26">
-            <span class="item__counter-text">{{ post.views_count }}</span> <!-- здесь количество просмотров поста -->
+            <span class="item__counter-text">{{ post.views_count }}</span> <!-- количество просмотров поста -->
           </div>
         </div>
         <div class="item__post-bottom">

@@ -17,10 +17,10 @@ def get_posts_by_user(user_name):
 	user_exists = False  # эта булева переменная нужна чтобы проверить наличие пользователя и вызвать ошибку если его нет
 	for post in all_posts:
 		if user_name == post['poster_name']:
-			user_posts.append(post)
+			user_posts.append(post) # добавляем в список если комментарий есть
 			user_exists = True
 	if not user_exists:
-		raise ValueError # Функция должна вызывать ошибку ValueError если такого рользователя нет
+		raise ValueError # Функция должна вызывать ошибку ValueError если такого пользователя нет
 	return user_posts
 
 def get_comments_by_post_id(post_id):
@@ -31,17 +31,17 @@ def get_comments_by_post_id(post_id):
 	for comment in all_comments:
 		if post_id == comment['post_id']:
 			post_exists = True
-			comments_list.append(comment)
-	if not post_exists:
-		raise ValueError # Функция должна вызывать ошибку ValueError если такого поста нет
+			comments_list.append(comment) # добавляем в список если комментарий есть
+	# if not post_exists:
+	# 	raise ValueError # Функция должна вызывать ошибку ValueError если такого поста нет
 	return comments_list
 
 def search_for_posts(query):
 	""" возвращает список постов по ключевому слову """
-	posts_list_by_word =[]
+	posts_list_by_word = []
 	all_posts = get_posts_all()  # обращаемся к функции, которая покажет все посты
 	for post in all_posts:
-		if query in post['content']:
+		if query.lower() in post['content'].lower():
 			posts_list_by_word.append(post)
 	return posts_list_by_word
 
