@@ -1,5 +1,5 @@
 import pytest
-import app
+from main import app
 
 def test_first_api_endpoint():
 	keys = {
@@ -30,4 +30,3 @@ def test_second_api_endpoint():
 	keys_set = set(response.json.keys())
 	assert type(response.json) == dict, "not dict"  # проверка что возвращается словарь
 	assert keys == keys_set, "keys do not match"  # проверка что у элемента есть нужные ключи
-

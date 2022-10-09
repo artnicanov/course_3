@@ -2,7 +2,8 @@ import logging
 from flask import Flask, render_template, request, jsonify
 import utils
 
-logging.basicConfig(filemode='w', level=logging.INFO)
+
+logging.basicConfig(filename="api.log", filemode='w', level=logging.INFO)
 api_logger = logging.getLogger()  # Создаем логгер
 file_handler = logging.FileHandler("api.log")  # Cоздаем ему обработчик для записи в файл
 formatter = logging.Formatter("%(asctime)s [%(levelname)s] %(message)s")  # Создаем новое форматирование
@@ -10,7 +11,7 @@ api_logger.addHandler(file_handler)  # Добавляем обработчик �
 file_handler.setFormatter(formatter)  # Применяем форматирование к обработчику
 
 app = Flask(__name__)
-
+app.config["JSON_AS_ASCII"] = False  # задаем конфигурацию чтобы контент с кириллицей читался в любом браузере
 
 # вьюшка ленты со всем постами
 @app.route('/')
@@ -76,5 +77,5 @@ def second_api_endpoint(postid):
 	logging.info(f"Запрос /api/posts/{postid}")  # сообщение для логгера
 	return jsonify(post_data)
 
-
-app.run()
+if __name__ == "__main__":
+	app.run()
