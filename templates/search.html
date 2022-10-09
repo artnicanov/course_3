@@ -44,7 +44,7 @@
         <a href="/posts/{{ post.pk }}" class="item__post-link"> <!-- в этой ссылке ведем на конкретный пост -->
           <img src= {{ post.pic }} alt="" width="348" class="item__post-img"> <!-- здесь картинка к посту -->
         </a>
-        <p class="item__descr"><a href="/tag.html" class="item__tag">#food</a> {{ post.content[:50] }}...</p> <!-- короткий пост до 50 символов -->
+        <p class="item__descr"> {{ post.content[:50] }}...</p> <!-- короткий пост до 50 символов -->
         <div class="item__post-info">
           <div class="item__counter">
             <img src="/static/img/eye.png" alt="" class="item__counter-icon" width="26">

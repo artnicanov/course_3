@@ -35,8 +35,7 @@ def post_page(postid):
 @app.route('/search/')
 def search_page():
 	search_query = request.args.get('s')  # получаем значение из адресной строки через args
-	posts_data = utils.search_for_posts(
-		search_query)  # передаем функции, которая ищет слова, значение полученное строкой выше
+	posts_data = utils.search_for_posts(search_query)  # передаем функции, которая ищет слова, значение полученное строкой выше
 	posts_count = len(posts_data)
 	return render_template('search.html', posts=posts_data, posts_count=posts_count)
 

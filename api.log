@@ -14,3 +14,57 @@
 2022-10-09 01:34:46,375 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 2022-10-09 01:34:46,376 [INFO] [33mPress CTRL+C to quit[0m
+2022-10-09 14:55:39,015 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-09 14:55:39,016 [INFO] [33mPress CTRL+C to quit[0m
+2022-10-09 14:55:43,964 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:43] "GET / HTTP/1.1" 200 -
+2022-10-09 14:55:44,459 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:44] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-10-09 14:55:44,468 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:44] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-10-09 14:55:44,476 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:44] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-10-09 14:55:44,806 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:44] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-09 14:55:48,216 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:48] "GET /users/leo HTTP/1.1" 200 -
+2022-10-09 14:55:48,304 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:48] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-10-09 14:55:48,316 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:48] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-10-09 14:55:48,322 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:48] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-10-09 14:55:48,362 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:48] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-09 14:55:52,727 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:52] "GET /posts/1 HTTP/1.1" 200 -
+2022-10-09 14:55:52,778 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:52] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-10-09 14:55:52,789 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:52] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-10-09 14:55:52,797 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:52] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-10-09 14:55:52,815 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:52] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-09 14:55:57,049 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:57] "GET / HTTP/1.1" 200 -
+2022-10-09 14:55:57,118 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:57] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-10-09 14:55:57,136 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:57] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-10-09 14:55:57,168 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:57] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-10-09 14:55:57,232 [INFO] 127.0.0.1 - - [09/Oct/2022 14:55:57] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-09 14:56:01,735 [INFO] 127.0.0.1 - - [09/Oct/2022 14:56:01] "GET /search/?s=кот HTTP/1.1" 200 -
+2022-10-09 14:56:01,817 [INFO] 127.0.0.1 - - [09/Oct/2022 14:56:01] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-10-09 14:56:01,824 [INFO] 127.0.0.1 - - [09/Oct/2022 14:56:01] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-10-09 14:56:01,827 [INFO] 127.0.0.1 - - [09/Oct/2022 14:56:01] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-10-09 14:56:01,850 [INFO] 127.0.0.1 - - [09/Oct/2022 14:56:01] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-09 14:57:39,460 [INFO] [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2022-10-09 14:57:39,460 [INFO] [33mPress CTRL+C to quit[0m
+2022-10-09 14:57:43,655 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:43] "GET / HTTP/1.1" 200 -
+2022-10-09 14:57:43,951 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:43] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-10-09 14:57:43,956 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:43] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-10-09 14:57:43,958 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:43] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-10-09 14:57:44,126 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:44] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-09 14:57:46,719 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:46] "GET /posts/2 HTTP/1.1" 200 -
+2022-10-09 14:57:46,776 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:46] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-10-09 14:57:46,780 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:46] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-10-09 14:57:46,784 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:46] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-10-09 14:57:46,817 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:46] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-09 14:57:49,814 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:49] "GET / HTTP/1.1" 200 -
+2022-10-09 14:57:49,867 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:49] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-10-09 14:57:49,873 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:49] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-10-09 14:57:49,889 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:49] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-10-09 14:57:49,941 [INFO] 127.0.0.1 - - [09/Oct/2022 14:57:49] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-09 14:58:00,471 [INFO] 127.0.0.1 - - [09/Oct/2022 14:58:00] "GET /search/?s=кот HTTP/1.1" 200 -
+2022-10-09 14:58:00,552 [INFO] 127.0.0.1 - - [09/Oct/2022 14:58:00] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+2022-10-09 14:58:00,556 [INFO] 127.0.0.1 - - [09/Oct/2022 14:58:00] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-10-09 14:58:00,559 [INFO] 127.0.0.1 - - [09/Oct/2022 14:58:00] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-10-09 14:58:00,600 [INFO] 127.0.0.1 - - [09/Oct/2022 14:58:00] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-09 14:58:04,726 [INFO] 127.0.0.1 - - [09/Oct/2022 14:58:04] "GET /posts/8 HTTP/1.1" 200 -
+2022-10-09 14:58:04,858 [INFO] 127.0.0.1 - - [09/Oct/2022 14:58:04] "GET /favicon.ico HTTP/1.1" 200 -
+2022-10-09 14:58:06,455 [INFO] 127.0.0.1 - - [09/Oct/2022 14:58:06] "GET /favicon.ico HTTP/1.1" 200 -
