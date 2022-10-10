@@ -23,12 +23,12 @@ def main_page():
 # вьюшка для одного поста
 @app.route('/posts/<int:postid>')  # id поста обязательно привести к числу, иначе будет ошибка
 def post_page(postid):
-	post_data = utils.get_post_by_pk(postid)  # в эту переменную передаем конкретный пост по его идентификатору
 	try:
-		comments_data = utils.get_comments_by_post_id(postid)  # в эту переменную передаем все комментарии к выбранному посту
-		comments_count = len(comments_data)  # здесь колличество комментариев
+		post_data = utils.get_post_by_pk(postid)  # в эту переменную передаем конкретный пост по его идентификатору
 	except ValueError:
 		return "POST NOT FOUND"  # покажем это сообщение если такого поста нет
+	comments_data = utils.get_comments_by_post_id(postid)  # в эту переменную передаем все комментарии к выбранному посту
+	comments_count = len(comments_data)  # здесь колличество комментариев
 	return render_template('post.html', post=post_data, comments=comments_data, comments_count=comments_count)
 
 
