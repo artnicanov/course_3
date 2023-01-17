@@ -1,5 +1,6 @@
 import json
 
+
 def get_posts_all():
 	""" возвращает все посты из json файла """
 	with open('data/posts.json', 'r', encoding='utf-8') as file:

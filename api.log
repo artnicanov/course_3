@@ -1,6 +1,11 @@
 INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
  * Running on http://127.0.0.1:5000
 INFO:werkzeug:[33mPress CTRL+C to quit[0m
-NG: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
- * Running on http://127.0.0.1:5000
-2022-10-10 23:18:44,560 [INFO] [33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [12/Oct/2022 01:38:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [12/Oct/2022 01:38:20] "[36mGET /static/css/styles.min.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Oct/2022 01:38:20] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Oct/2022 01:38:20] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [12/Oct/2022 01:38:21] "GET /favicon.ico HTTP/1.1" 200 -
+- [12/Oct/2022 01:38:20] "[36mGET /static/img/bookmark.png HTTP/1.1[0m" 304 -
+2022-10-12 01:38:20,912 [INFO] 127.0.0.1 - - [12/Oct/2022 01:38:20] "[36mGET /static/img/eye.png HTTP/1.1[0m" 304 -
+2022-10-12 01:38:21,138 [INFO] 127.0.0.1 - - [12/Oct/2022 01:38:21] "GET /favicon.ico HTTP/1.1" 200 -
