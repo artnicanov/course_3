@@ -1,4 +1,4 @@
-from main import app
+from app import app
 
 def test_first_api_endpoint():
 	keys = {
